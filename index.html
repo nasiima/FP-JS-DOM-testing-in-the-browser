@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Document</title>
+</head>
+
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home" type="button"  onclick="change1()"> home</a></li>
+            <li><a href="#Features" type="button" onclick="change2()"> features </a>
+                <li><a href="#Pricing" type="button"  onclick="change3()"> pricing </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <body >
+
+<p>  If a user clicks on the h1 tag, the background should change colour, if they move their mouse out of the space the background should return to the original colour.</p>
+    
+   
+
+
+
+    <h1 > <button  id="mydiv" > 
+        H1 tag
+    </button> </h1>
+
+
+
+
+
+
+<p>If a user hovers over a h2 tag replace the words inside it to contain a greeting </p>
+
+
+    <h2 onmouseover="changeText(this, 'Hello')" onmouseout="changeText(this, 'change text.')"> change text</h2>
+
+
+
+
+   
+<p > If someone types a letter whilst viewing the webpage a new paragraph should be created and that letter should be added to it. </p>
+
+
+    <section>   
+        <h3>enter letter:</h3>
+        <input type="text" id="comment" placeholder="enter letter" maxlength="1" >
+        
+        <button onclick='getLetter()' type="button" value="hello" name="commentsubmit">Comment!</button>
+        <p id="output"></p>
+    </section>
+        
+
+
+
+            <p id="home" class="styleBeforeHome" >if someone clicks on one of the navigation items the styling of the connecting paragraph should </p> </p>
+
+            <p id="Features" class="styleBeforeFeatures"> change to be more bold and be a larger font size. If they click again on  </p>
+
+            <p id="Pricing" class="styleBeforePricing">   the same navigation item, the paragraph should revert to original styling   
+            </p>
+
+<footer>over and out</footer>
+ 
+        
+     
+     
+</body>
+</html>
